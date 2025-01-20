@@ -1,5 +1,12 @@
 # Sample code by chatgpt
-from flask import Flask, jsonify
+import json
+import os
+import requests
+
+from flask import Flask
+from flask import Flask, jsonify, render_template, render_template_string, url_for, redirect, flash, g
+import boto3
+
 
 app = Flask(__name__)
 
