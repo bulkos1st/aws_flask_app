@@ -1,0 +1,7 @@
+#!/bin/bash -ex
+yum -y install git
+yum -y install python3-pip
+git clone https://github.com/bulkos1st/aws_flask_app.git
+cd aws_flask_app/
+pip install -r requirements.txt
+python3 aws_app.py
