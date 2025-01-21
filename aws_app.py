@@ -45,8 +45,8 @@ def before_request():
 
 
 @app.route("/")
-def home():
-    return "<h1>Welcome to the Flask AWS Deployment Demo!</h1>"
+def index():
+    return render_template("index.html")
 
 @app.route("/health")
 def health_check():

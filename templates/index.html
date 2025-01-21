@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="text-center mt-5">
+    <h1 class="display-4">Hello, Flask!</h1>
+    <p class="lead">This is a Flask application deployed in AWS.</p>
+    <h5>Instance Info</h5>
+    <b>instance_id</b>: {{g.instance_id}} <br/>
+    <b>availability_zone</b>: {{g.availablity_zone}} <br/>
+    <hr/>
+</div>
+{% endblock %}
